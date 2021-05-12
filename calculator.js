@@ -16,19 +16,21 @@ Crie um script em sua linguagem de programação preferida que receba o valor in
 */
 
 function calculator() {
-  const investiment = 2500
-  const views = investiment * 30
-  const views2 = views * 0.72
-  const views3 = views2 * 0.72
-  const views4 = views3 * 0.72
-  const totalViews = views + views2 + views3 + views4
+  const investiment = 250
+  const views = investiment * 30 
+  const viewsShared = views * 0.72
+  const viewsShared2 = viewsShared * 0.72
+  const viewsShared3 = viewsShared2 * 0.72
+  const viewsShared4 = viewsShared3 * 0.72
+  const totalViews = views + viewsShared + viewsShared2 + viewsShared3 + viewsShared4
 
   console.log(`O valor investido foi: ${investiment}R$`);
   console.log(`Projeção da quantidade de views no anúncio original é: ${views} Views`);
-  console.log(`Projeção de Views no anúncio compartilhado pela PRIMEIRA pessoa é: ${views2.toFixed(2)} Views `);
-  console.log(`Projeção de Views no anúncio compartilhado pela SEGUNDA pessoa é: ${views3.toFixed(2)} Views`);
-  console.log(`Projeção de Views no anúncio compartilhado pela TERCEIRA pessoa é: ${views4.toFixed(2)} Views`);
-  console.log(`Projeção da quantidade TOTAL de views com os compartilhamentos é: ${totalViews.toFixed(2)} Views`);
+  console.log(`Projeção de Views no anúncio compartilhado pela PRIMEIRA pessoa é: ${viewsShared.toFixed(2)} Views `);
+  console.log(`Projeção de Views no anúncio compartilhado pela SEGUNDA pessoa é: ${viewsShared2.toFixed(2)} Views`);
+  console.log(`Projeção de Views no anúncio compartilhado pela TERCEIRA pessoa é: ${viewsShared3.toFixed(2)} Views`);
+  console.log(`Projeção de Views no anúncio compartilhado pela QUARTA pessoa é: ${viewsShared4.toFixed(2)} Views`);
+  console.log(`Projeção da quantidade TOTAL de views (Anúncio + compartilhamentos): ${totalViews.toFixed(2)} Views`);
 }
 
 calculator()
