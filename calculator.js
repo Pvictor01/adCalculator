@@ -30,7 +30,7 @@ console.log(`Projeção da quantidade TOTAL de views com os compartilhamentos é
 */
 
 function calculator() {
-  const investiment = 100
+  const investiment = 2500
   const views = investiment * 30
   const views2 = views * 0.72
   const views3 = views2 * 0.72
